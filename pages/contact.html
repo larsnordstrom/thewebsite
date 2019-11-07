@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/style/style.css">
     <title>Kontakt</title>
 </head>
+
 <body>
     <nav class="navigation">
         <ul>
@@ -15,6 +17,24 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    contact
+    <main>
+        <form class="contact-form" action="" method="POST">
+            <section class="input-container">
+                <label class="input-label" for="name">Namn:</label>
+                <input type="text" id="name" name="userName">
+            </section>
+            <section class="input-container">
+                <label class="input-label" for="email">Email:</label>
+                <input type="email" id="email" name="userEmail">
+            </section>
+            <section class="input-container">
+                <label class="input-label" for="message">Meddelande:</label>
+                <textarea name="userMessage" id="message" cols="30" rows="10"></textarea>
+            </section>
+            <section class="input-container">
+                <button>Skicka</button>
+            </section>
+        </form>
+    </main>
 </body>
 </html>
